@@ -1,5 +1,5 @@
 {
-  "name": "WildRift-Merged-Stats-Data",
+  "name": "wildrift-merged-stats-data",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -21,7 +21,12 @@
     "@types/node": "^25.3.0",
     "eslint": "^10.0.2",
     "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript-eslint": "^8.56.1",
+    "wildrift-merged-champion-types": "^1.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.13.5"
   }
 }
