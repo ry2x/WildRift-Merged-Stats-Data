@@ -18,7 +18,7 @@ async function createOutputDirectory() {
 async function writeJsonFile(data) {
     try {
         const outputPath = (0, path_1.join)(config_1.config.OUTPUT_FOLDER_NAME, config_1.config.OUTPUT_FILE_NAME);
-        (0, fs_1.writeFileSync)(outputPath, JSON.stringify(data, null, 2), 'utf-8');
+        (0, fs_1.writeFileSync)(outputPath, JSON.stringify(data), 'utf-8');
         console.log(config_1.config.MESSAGE_SUCCESS.JSON_WRITE);
     }
     catch (error) {

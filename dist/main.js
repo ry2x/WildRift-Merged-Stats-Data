@@ -12,8 +12,9 @@ async function main() {
             (0, api_1.fetchData)(config_1.config.CHAMPION_DATA_URL),
         ]);
         const firstEntry = Object.values(cnApiResponse.data.data['0'] ?? {})?.[0]?.[0];
-        const date = firstEntry?.dtstatdate
-            ? new Date(firstEntry.dtstatdate).toISOString()
+        const rawDate = firstEntry?.dtstatdate ?? '';
+        const date = rawDate.length === 8
+            ? new Date(`${rawDate.slice(0, 4)}-${rawDate.slice(4, 6)}-${rawDate.slice(6, 8)}T00:00:00Z`).toISOString()
             : new Date().toISOString();
         const mergedStats = (0, edit_1.convertToMergedStats)(cnApiResponse.data, championDataResponse.data, date);
         await (0, file_1.writeJsonFile)(mergedStats);

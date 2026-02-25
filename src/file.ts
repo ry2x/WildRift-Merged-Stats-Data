@@ -26,7 +26,7 @@ export async function createOutputDirectory(): Promise<void> {
 export async function writeJsonFile(data: MergedChampionStats): Promise<void> {
   try {
     const outputPath = join(config.OUTPUT_FOLDER_NAME, config.OUTPUT_FILE_NAME);
-    writeFileSync(outputPath, JSON.stringify(data, null, 2), 'utf-8');
+    writeFileSync(outputPath, JSON.stringify(data), 'utf-8');
     console.log(config.MESSAGE_SUCCESS.JSON_WRITE);
   } catch (error) {
     console.error(config.MESSAGE_ERROR.JSON_WRITE, error);
