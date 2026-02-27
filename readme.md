@@ -106,6 +106,8 @@ type Ranks = 'all' | 'diamond_plus' | 'master_plus' | 'challenger_plus' | 'super
 type Lanes = 'mid' | 'jungle' | 'top' | 'support' | 'ad';
 ```
 
+詳しくは [型定義ファイル](./src/types/mergedData.ts) を参照してください。
+
 ### レスポンス例
 
 ```json
@@ -144,7 +146,7 @@ type Lanes = 'mid' | 'jungle' | 'top' | 'support' | 'ad';
 | `all`              | 全ランク          |
 | `diamond_plus`     | ダイヤモンド以上  |
 | `master_plus`      | マスター以上      |
-| `challenger_plus`  | チャレンジャー以上 |
+| `challenger_plus`  | チャレンジャー以上|
 | `super_server`     | スーパーサーバー  |
 
 ### レーン (Lanes)
@@ -155,10 +157,4 @@ type Lanes = 'mid' | 'jungle' | 'top' | 'support' | 'ad';
 | `jungle`  | ジャングル   |
 | `top`     | トップレーン |
 | `support` | サポート     |
-| `ad`      | ADCレーン   |
-
----
-
-## ライセンス
-
-[MIT](./LICENSE)
+| `ad`      | ADCレーン    |

@@ -106,6 +106,8 @@ type Ranks = 'all' | 'diamond_plus' | 'master_plus' | 'challenger_plus' | 'super
 type Lanes = 'mid' | 'jungle' | 'top' | 'support' | 'ad';
 ```
 
+Details can be found in the [type definition file](./src/types/mergedData.ts).
+
 ### Response Example
 
 ```json
@@ -156,9 +158,3 @@ type Lanes = 'mid' | 'jungle' | 'top' | 'support' | 'ad';
 | `top`     | Top lane    |
 | `support` | Support     |
 | `ad`      | AD Carry    |
-
----
-
-## License
-
-[MIT](./LICENSE)

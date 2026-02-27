@@ -7,7 +7,7 @@
   "MESSAGE_ERROR": {
     "FOLDER_CREATE": "Failed to create output folder❌",
     "DATA_FETCH": "Failed to fetch data❌",
-    "JSON_WRITE": "Failed to write JSON file lang: {lang}❌",
+    "JSON_WRITE": "Failed to write JSON file❌",
     "DATA_EXPORT": "Failed to export data❌",
     "PROCESS_ERROR": "An error occurred during processing❌"
   },
