@@ -23,7 +23,7 @@
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.56.1",
+    "typescript-eslint": "^8.59.1",
     "wildrift-merged-champion-types": "^1.0.1"
   },
   "dependencies": {
