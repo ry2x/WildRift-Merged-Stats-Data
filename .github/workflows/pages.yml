@@ -46,7 +46,7 @@ jobs:
           git fetch --no-recurse-submodules
           git worktree add ./gh-pages gh-pages || true
           cd gh-pages
-          git rm -r .
+          git rm -r --ignore-unmatch .
           cp -r ../public/. .
           git add .
           if git diff --cached --quiet; then
